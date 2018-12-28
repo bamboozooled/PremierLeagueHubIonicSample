@@ -1,0 +1,18 @@
+<ion-header>
+  <ion-navbar color="primary">
+    <ion-title>News</ion-title>
+  </ion-navbar>
+</ion-header>
+<ion-content padding>
+
+  <div fxLayout="row wrap" fxLayoutAlign="center center">
+    <div *ngFor="let news of newsObject">
+      <ion-card style="height: 20vh; width: 20vw;">
+        <ion-card-content style="padding: 0">
+          <img style="height: 15vh" src={{news.picLink}}>
+          <p style="font-size: 12px; margin: 5px; word-break: break-all">{{news.title}}</p>
+        </ion-card-content>
+      </ion-card>
+    </div>
+  </div>
+</ion-content>
